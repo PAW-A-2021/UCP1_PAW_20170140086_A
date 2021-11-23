@@ -1,0 +1,66 @@
+﻿@model DataVaksin.Models.DataAnggota
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DataAnggota</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nama)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nama)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Umur)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Umur)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Pekerjaan)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pekerjaan)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TempatTanggalLahir)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TempatTanggalLahir)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.JenisKelamin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.JenisKelamin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.JenisVaksin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.JenisVaksin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Alamat)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Alamat)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Foto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Foto)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Nik">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
